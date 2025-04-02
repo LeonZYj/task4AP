@@ -78,7 +78,7 @@ public class EmpDeptSalgradeTests
     {
         var emps = Database.GetEmps();
 
-        // var result = null; 
+        // var result =  emps.Select(e => new {e.DeptNo, }); 
         //
         // Assert.Contains(result, g => g.DeptNo == 30 && g.Count == 2);
     }
@@ -90,9 +90,10 @@ public class EmpDeptSalgradeTests
     {
         var emps = Database.GetEmps();
 
-        // var result = null; 
-        //
-        // Assert.All(result, r => Assert.NotNull(r.Comm));
+        var result = emps.Select(e => new { e.EName, e.Comm }).
+            Where(e => e.Comm != null).ToList();
+        
+        Assert.All(result, r => Assert.NotNull(r.Comm));
     }
 
     // 8. Join with Salgrade

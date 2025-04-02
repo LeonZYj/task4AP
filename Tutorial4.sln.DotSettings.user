@@ -3,5 +3,6 @@
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::73439BA3-64B9-4BEC-A837-8A5044D3E5BB::net9.0::EmpDeptSalgradeTests.ShouldJoinEmployeesWithDepartments&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::73439BA3-64B9-4BEC-A837-8A5044D3E5BB::net9.0::EmpDeptSalgradeTests.ShouldSelectNamesAndSalaries&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::73439BA3-64B9-4BEC-A837-8A5044D3E5BB::net9.0::EmpDeptSalgradeTests.ShouldReturnEmployeesWithCommission&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
