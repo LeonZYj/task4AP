@@ -46,10 +46,10 @@ public class AdvancedEmpDeptTests
     {
         var emps = Database.GetEmps();
 
-        // var jobs = null; 
-        //
-        // Assert.Contains("PRESIDENT", jobs);
-        // Assert.Contains("SALESMAN", jobs);
+        var jobs = emps.Select(e => e.Job).Distinct().ToList(); 
+        
+        Assert.Contains("PRESIDENT", jobs);
+        Assert.Contains("SALESMAN", jobs);
     }
 
     // 15. Employees with managers (NOT NULL Mgr)
@@ -59,9 +59,9 @@ public class AdvancedEmpDeptTests
     {
         var emps = Database.GetEmps();
 
-        // var withMgr = null; 
-        //
-        // Assert.All(withMgr, e => Assert.NotNull(e.Mgr));
+        var withMgr = emps.Where(e => e.Mgr != null).ToList();
+        
+        Assert.All(withMgr, e => Assert.NotNull(e.Mgr));
     }
 
     // 16. All employees earn more than 500
@@ -69,11 +69,12 @@ public class AdvancedEmpDeptTests
     [Fact]
     public void AllEmployeesShouldEarnMoreThan500()
     {
-        var emps = Database.GetEmps();
-
-        // var result = null; 
-        //
-        // Assert.True(result);
+    //     var emps = Database.GetEmps();
+    //
+    //     var result = emps.Where(e => e.Sal > 500).ToList(); 
+    //dont know but doesnt work
+    //     
+    //     Assert.True(result);
     }
 
     // 17. Any employee with commission over 400

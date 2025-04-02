@@ -8,5 +8,7 @@
     &lt;TestId&gt;xUnit::73439BA3-64B9-4BEC-A837-8A5044D3E5BB::net9.0::EmpDeptSalgradeTests.ShouldCalculateAverageSalaryPerDept&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::73439BA3-64B9-4BEC-A837-8A5044D3E5BB::net9.0::Tutorial3Tests.AdvancedEmpDeptTests.ShouldReturnMaxSalary&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::73439BA3-64B9-4BEC-A837-8A5044D3E5BB::net9.0::Tutorial3Tests.AdvancedEmpDeptTests.ShouldReturnMinSalaryInDept30&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::73439BA3-64B9-4BEC-A837-8A5044D3E5BB::net9.0::Tutorial3Tests.AdvancedEmpDeptTests.ShouldReturnDistinctJobTitles&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::73439BA3-64B9-4BEC-A837-8A5044D3E5BB::net9.0::Tutorial3Tests.AdvancedEmpDeptTests.ShouldReturnEmployeesWithManagers&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

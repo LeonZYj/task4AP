@@ -121,7 +121,7 @@ public class EmpDeptSalgradeTests
         var emps = Database.GetEmps();
 
         var result = emps.Select(e => new { e.DeptNo, e.Sal }).GroupBy(e => e.DeptNo).ToList();
-        //not correct
+        //not correct yet
         // Assert.Contains(result, r => r.DeptNo == 30 && r.AvgSal > 1000);
     }
 
