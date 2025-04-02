@@ -104,9 +104,13 @@ public class EmpDeptSalgradeTests
         var emps = Database.GetEmps();
         var grades = Database.GetSalgrades();
 
-        // var result = null;
-        //
-        // Assert.Contains(result, r => r.EName == "ALLEN" && r.Grade == 3);
+        var result = from e in emps
+            from g in grades
+            where e.Sal >= g.Losal && e.Sal <= g.Hisal
+            select new { e.EName, g.Grade };
+                 //toList doesnt work fix ltater();
+        
+        Assert.Contains(result, r => r.EName == "ALLEN" && r.Grade == 3);
     }
 
     // 9. Aggregation (AVG)
@@ -116,8 +120,8 @@ public class EmpDeptSalgradeTests
     {
         var emps = Database.GetEmps();
 
-        // var result = null; 
-        //
+        var result = emps.Select(e => new { e.DeptNo, e.Sal }).GroupBy(e => e.DeptNo).ToList();
+        //not correct
         // Assert.Contains(result, r => r.DeptNo == 30 && r.AvgSal > 1000);
     }
 
